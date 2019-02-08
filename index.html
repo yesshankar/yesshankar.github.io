@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91007152-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-91007152-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -38,10 +48,10 @@
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-center w3-small w3-theme">
-            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#work" class="w3-bar-item w3-button" style="width:25% !important">WORK</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important"><i class="fa fa-home"></i>HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important"><i class="fa fa-user"></i>ABOUT</a>
+            <a href="#work" class="w3-bar-item w3-button" style="width:25% !important"><i class="fa fa-suitcase"></i>WORK</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important"><i class="fa fa-envelope"></i>CONTACT</a>
         </div>
     </div>
 
@@ -51,7 +61,7 @@
         <header class="w3-container w3-padding-32 w3-center" id="home">
             <h1 class="w3-jumbo">
                 <span class="w3-hide-small">I'm</span> Shankar Khatri.</h1>
-            <p>Full Stack Web Developer / Software Engineer.</p>
+            <p id="typing">{Software_Developer}</p>
             <img src="images/pp.png" alt="boy" class="w3-image" width="515" height="515">
         </header>
 
@@ -61,20 +71,21 @@
             <hr style="width:200px" class="w3-opacity">
 
             <p>
-                Hi there! I'm Shankar Khatri from Aurora IL, USA. I currently work as a cryptocurreny trader making use of
-                my self-made bot. I have started programming from 2011, when I was freshmen in Compuer Science. I 
-                haven't work for outside client yet, all the softwares and websites I have built is for myslef and 
-                for practicing purpose. My learning journey started from <code>C</code> language back in 2011, and then 
-                <code>C++, HTML, CSS, Javascript</code> followed by <code>C#, .NET, MSSQL, Java SE, Java EE, MySQL, Java 
-                Swing/FX, Android </code> respectively.
-                In recent years I have been working with <code>Node JS, Express, MongoDB, React (MERN Stack)</code> with different 
-                library available in npm packages. And currently, I am learning Blockchain Technology.                 
+                Hi there! I'm Shankar Khatri from Aurora IL, USA. I currently work as a cryptocurreny trader making use of my self-made bot.
+                I have started programming from 2011, when I was freshmen in Compuer Science. I haven't work for outside
+                client yet, all the softwares and websites I have built is for myslef and for practicing purpose. My learning
+                journey started from
+                <code>C</code> language back in 2011, and then
+                <code>C++, HTML, CSS, Javascript</code> followed by
+                <code>C#, .NET, MSSQL, Java SE, Java EE, MySQL, Java 
+                Swing/FX, Android </code> respectively. In recent years I have been working with
+                <code>Node JS, Express, MongoDB, React (MERN Stack) and Vue js</code> with different library available in npm packages. And currently, I am learning Blockchain Technology.
             </p>
             <p>
-                I have done my Bachelors from Northeastern Illinois University, Chicago with (4.0 GPA) in Computer Science. 
-                I have been in Deans List and President List many times during my education joruney. I am continuous learner 
-                and loves to learn new technology as it evolves. I spend most of the time in learning and refreshing my knowledge 
-                using onlline platforms like edX, coursera, udemy, udacity, codeacademy etc.
+                I have done my Bachelors from Northeastern Illinois University, Chicago with (4.0 GPA) in Computer Science. I have been in
+                Deans List and President List many times during my education joruney. I am continuous learner and loves to
+                learn new technology as it evolves. I spend most of the time in learning and refreshing my knowledge using
+                online platforms like edX, coursera, udemy, udacity, codeacademy etc.
             </p>
         </div>
         <!-- End About Section -->
@@ -85,50 +96,91 @@
             <hr style="width:200px" class="w3-opacity">
 
 
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
                 <i class="fa fa-download"></i> Download Resume
-            </button>
+            </button> -->
 
             <!-- Grid for projects -->
             <div class="grid-container">
                 <div class="w3-card-4">
-                    <img class="w3-image" src="images/thumbnail-1.JPG" alt="project thubnail" />
-                    <h3>Private Blockchain</h3>
-                    <p>A private blockchain with Notary Service.</p>
-                    <p>Technology Used:
-                        <span class="w3-tag w3-theme w3-margin-bottom">RESTful API</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-                    </p>
+                    <a href="https://github.com/yesshankar/PrivateBlockchain" target="_blank">                        
+                        <img class="w3-image" src="images/thumb-private-blockchain.JPG" alt="project thubnail" />
+                        <h3>Private Blockchain</h3>
+                        <p>A private blockchain with Notary Service.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">RESTful API</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
                 </div>
                 <div class="w3-card-4">
-                    <img class="w3-image" src="images/thumbnail-2.JPG" alt="project thubnail" />
-                    <h3>Smart Contract</h3>
-                    <p>Ethereum Smart Contract based on ERC721 Non-Fungible Token Standard basic implementation.</p>
-                    <p>Technology Used:
-                        <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-                    </p>
+                    <a href="https://github.com/yesshankar/SmartContract1" target="_blank">
+                        <img class="w3-image" src="images/thumb-smart-contract1.JPG" alt="project thubnail" />
+                        <h3>Smart Contract</h3>
+                        <p>Ethereum Smart Contract based on ERC721 Non-Fungible Token Standard basic implementation.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
                 </div>
                 <div class="w3-card-4">
-                    <img class="w3-image" src="images/thumbnail-3.JPG" alt="project thubnail" />
-                    <h3>Foodar</h3>
-                    <p>Fully Responsive website without using any CSS libaray. Food request service website.</p>
-                    <p>Technology Used:
-                        <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                        <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-                    </p>
+                    <a href="https://skhatri.xyz/24hr-stats/" target="_blank">
+                        <img class="w3-image" src="images/thumb-24hr-stats.JPG" alt="project thubnail" />
+                        <h3>Crypto 24hr Stats</h3>
+                        <p>24 hour status of cryptocurrency assets from Coinbase Pro exchange in the form of heatmap.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">Vue JS</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Websocket</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
                 </div>
-                <div class="w3-card-4">test</div>
-                <div class="w3-card-4">test</div>
-                <div class="w3-card-4">test</div>
+                <div class="w3-card-4">
+                    <a href="https://skhatri.xyz/all-charts/" target="_blank">
+                        <img class="w3-image" src="images/thumb-all-charts.JPG" alt="project thubnail" />
+                        <h3>Multiple Crypto Charts</h3>
+                        <p>View multiple charts of cryptocurrency from different exchanges in single page using TradingView widgets.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="w3-card-4">
+                    <a href="https://skhatri.xyz/foodar/" target="_blank">
+                        <img class="w3-image" src="images/thumb-foodar.JPG" alt="project thubnail" />
+                        <h3>Foodar</h3>
+                        <p>Fully Responsive website without using any CSS libaray. Food request service website.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
+                </div>                
+                <div class="w3-card-4">
+                    <a href="http://homepages.neiu.edu/~skhatri/tictactoe4.html" target="_blank">
+                        <img class="w3-image" src="images/thumb-tictactoe.JPG" alt="project thubnail" />
+                        <h3>Tic Tac Toe</h3>
+                        <p>Tic Tac Toe game made during my university time.</p>
+                        <p>Technology Used:
+                            <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
+                            <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
+                        </p>
+                    </a>
+                </div>
             </div>
             <!-- End Grid -->
         </div>
@@ -150,7 +202,7 @@
             <br>
             <p>Lets get in touch. Send me a message:</p>
 
-            <form action="/action_page.php" target="_blank">
+            <form id="contat-form">
                 <p>
                     <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
                 </p>
@@ -187,12 +239,14 @@
             <a href="https://github.com/yesshankar" target="_blank">
                 <i class="fa fa-github w3-padding w3-hover-dark w3-padding w3-border-theme w3-round"></i>
             </a>
-            
+
             <!-- End footer -->
         </footer>
 
         <!-- END PAGE CONTENT -->
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
