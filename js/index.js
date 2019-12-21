@@ -7,7 +7,8 @@ const apiUrl = "https://api-skhatri-xyz.herokuapp.com/email/contact-form";
 contactForm.addEventListener("submit", async e => {
   e.preventDefault();
   submitButton.setAttribute("disabled", "");
-  messageStatus.innerText = "Sending message........";
+  messageStatus.innerText =
+    "Sending message........, it might take upto 7 second";
 
   const formData = new FormData(contactForm);
   const formDataObj = {};
@@ -23,7 +24,7 @@ contactForm.addEventListener("submit", async e => {
     messageStatus.style.color = "green";
   } else {
     messageStatus.innerText =
-      "Sorry! Unable to send message. Someting went wrong, please contact via other method";
+      "Sorry! Unable to send message. Something went wrong, please contact via other method";
     messageStatus.style.color = "red";
   }
 

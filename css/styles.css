@@ -55,6 +55,10 @@ a {
   margin-left: 10px;
 }
 
+p span {
+  margin: 5px;
+}
+
 @media (max-width: 992px) {
   .grid-container {
     grid-template-columns: auto auto;

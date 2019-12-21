@@ -128,8 +128,11 @@
             >C#, .NET, MSSQL, Java SE, Java EE, MySQL, Java Swing/FX, Android
           </code>
           respectively. In recent years I have been working with
-          <code>Node JS, Express, MongoDB, React (MERN Stack), Vue js and Blockchain Technology (mostly solidity)</code>
-          with different library available in npm packages. 
+          <code
+            >Node JS, Express, MongoDB, React (MERN Stack), Vue js and
+            Blockchain Technology (mostly solidity)</code
+          >
+          with different library available in npm packages.
         </p>
         <p>
           I have done my Bachelors from Northeastern Illinois University,
@@ -155,140 +158,11 @@
 
         <!-- Grid for projects -->
         <div class="grid-container">
-          <div class="w3-card-4">
-            <a
-              href="https://github.com/yesshankar/PrivateBlockchain"
-              target="_blank"
-            >
-              <img
-                class="w3-image"
-                src="images/thumb-private-blockchain.JPG"
-                alt="project thubnail"
-              />
-              <h3>Private Blockchain</h3>
-              <p>A private blockchain with Notary Service.</p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom"
-                  >RESTful API</span
-                >
-                <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
-          <div class="w3-card-4">
-            <a
-              href="https://github.com/yesshankar/SmartContract1"
-              target="_blank"
-            >
-              <img
-                class="w3-image"
-                src="images/thumb-smart-contract1.JPG"
-                alt="project thubnail"
-              />
-              <h3>Smart Contract</h3>
-              <p>
-                Ethereum Smart Contract based on ERC721 Non-Fungible Token
-                Standard basic implementation.
-              </p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom">Node JS</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Express</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
-          <div class="w3-card-4">
-            <a href="https://skhatri.xyz/24hr-stats/" target="_blank">
-              <img
-                class="w3-image"
-                src="images/thumb-24hr-stats.JPG"
-                alt="project thubnail"
-              />
-              <h3>Crypto 24hr Stats</h3>
-              <p>
-                24 hour status of cryptocurrency assets from Coinbase Pro
-                exchange in the form of heatmap.
-              </p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom">Vue JS</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Websocket</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
-          <div class="w3-card-4">
-            <a href="https://skhatri.xyz/all-charts/" target="_blank">
-              <img
-                class="w3-image"
-                src="images/thumb-all-charts.JPG"
-                alt="project thubnail"
-              />
-              <h3>Multiple Crypto Charts</h3>
-              <p>
-                View multiple charts of cryptocurrency from different exchanges
-                in single page using TradingView widgets.
-              </p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
-          <div class="w3-card-4">
-            <a href="https://skhatri.xyz/foodar/" target="_blank">
-              <img
-                class="w3-image"
-                src="images/thumb-foodar.JPG"
-                alt="project thubnail"
-              />
-              <h3>Foodar</h3>
-              <p>
-                Fully Responsive website without using any CSS libaray. Food
-                request service website.
-              </p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
-          <div class="w3-card-4">
-            <a
-              href="http://homepages.neiu.edu/~skhatri/tictactoe4.html"
-              target="_blank"
-            >
-              <img
-                class="w3-image"
-                src="images/thumb-tictactoe.JPG"
-                alt="project thubnail"
-              />
-              <h3>Tic Tac Toe</h3>
-              <p>Tic Tac Toe game made during my university time.</p>
-              <p>
-                Technology Used:
-                <span class="w3-tag w3-theme w3-margin-bottom">Javascript</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">HTML</span>
-                <span class="w3-tag w3-theme w3-margin-bottom">CSS</span>
-              </p>
-            </a>
-          </div>
+          <project-card
+            v-for="project in projects"
+            :project="project"
+          ></project-card>
         </div>
-        <!-- End Grid -->
       </div>
       <!-- End Work Section -->
 
@@ -395,6 +269,10 @@
       <!-- END PAGE CONTENT -->
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
