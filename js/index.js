@@ -17,6 +17,8 @@ contactForm.addEventListener("submit", async e => {
     formDataObj[pair[0]] = pair[1];
   }
 
+  formDataObj.isTrusted = e.isTrusted;
+
   const response = await sendFormData(formDataObj, apiUrl);
 
   if (response.Status === "success") {
