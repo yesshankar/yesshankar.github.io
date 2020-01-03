@@ -11,6 +11,22 @@ let app = new Vue({
         techs: ["Vue JS", "Websocket", "Javascript", "HTML", "CSS"]
       },
       {
+        href: "https://skhatri.xyz/my-tube/",
+        src: "images/thumb-my-tube.JPG",
+        title: "My Tube",
+        summary:
+          "Youtube clone web app where you can search and watch youtube videos.",
+        techs: [
+          "React JS",
+          "Node JS",
+          "Express",
+          "Javascript",
+          "Bootstrap",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
         href: "https://github.com/yesshankar/PrivateBlockchain",
         src: "images/thumb-private-blockchain.JPG",
         title: "Private Blockchain",

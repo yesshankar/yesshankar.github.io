@@ -14,7 +14,7 @@ Vue.component("project-card", {
          <h3>{{ project.title }}</h3>
          <p>{{ project.summary }}</p>
          <p>
-            Technology Used:
+            Tech Used:
             <span v-for="tech in project.techs" class="w3-tag w3-theme">{{ tech }}</span>
             
          </p>
