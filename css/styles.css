@@ -152,3 +152,25 @@ p span {
 .w3-hover-border-theme:hover {
   border-color: #009688 !important;
 }
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+  z-index: 98;
+}
+
+.construction {
+  position: absolute;
+  top: 35vh;
+  left: 30vw;
+  z-index: 99;
+}
+
+.construction img {
+  max-width: 100%;
+  height: auto;
+}

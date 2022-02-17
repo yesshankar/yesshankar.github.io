@@ -4,11 +4,10 @@ const messageStatus = document.getElementById("message-status");
 const apiUrl = "https://api-skhatri-xyz.herokuapp.com/email/contact-form";
 // const apiUrl = "http://localhost:3333/email/contact-form";
 
-contactForm.addEventListener("submit", async e => {
+contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   submitButton.setAttribute("disabled", "");
-  messageStatus.innerText =
-    "Sending message........, it might take upto 7 second";
+  messageStatus.innerText = "Sending message........, it might take upto 7 second";
 
   const formData = new FormData(contactForm);
   const formDataObj = {};
@@ -25,8 +24,7 @@ contactForm.addEventListener("submit", async e => {
     messageStatus.innerText = "Message sent successfully!!";
     messageStatus.style.color = "green";
   } else {
-    messageStatus.innerText =
-      "Sorry! Unable to send message. Something went wrong, please contact via other method";
+    messageStatus.innerText = "Sorry! Unable to send message. Something went wrong, please contact via other method";
     messageStatus.style.color = "red";
   }
 
@@ -41,9 +39,9 @@ async function sendFormData(data, url) {
   const response = await fetch(apiUrl, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
   });
 
   return await response.json();
@@ -66,3 +64,8 @@ function typeWord(elem, word) {
     }, (index + 1) * 100);
   }
 }
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("particles-js", "js/particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
